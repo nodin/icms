@@ -1,0 +1,18 @@
+DHCP Files:
+     1. /tmp/dhcp%DHCP_NAME.leases (the dhcp files download from dhcp server.)	
+     2. /var/log/dhcp_opt82.log_%DHCP_NAME (if first install, must touch this file.)
+     3. /var/log/dhcp_parese_pos_%DHCP_NAME (if first install, must touch this file and echo 0 into.)
+     4. /var/log/MAC2NSP_%Y%m%d_%DHCP_NAME.txt (temporary files, it will be moved to the directory on Step 6. )
+     5. /tmp/device_%Y%m%d_%DHCP_NAME.txt
+     6. /var/log/History_OPTION82/MAC2NSP_%Y%m%d_%DHCP_NAME.txt
+     
+Radius Files:
+     1. /tmp/radius.log_%Y%m%d (the radius log download from dhcp server.)
+     2. /var/log/RADIUS_MAC2NSP_%Y%m%d.txt (temporary files, it will be moved to the directory on Step 6. )
+     3. /tmp/device_%Y%m%d_%DHCP_NAME.txt
+     4. /var/log/History_OPTION82/MAC2NSP_%Y%m%d_%DHCP_NAME.txt
+
+ICMS Files:
+     1. /tmp/subscirber_%s.txt
+
+At last, the /tmp/device_%Y%m%d_%DHCP_NAME.txt and /tmp/subscirber_%Y%m%d.txt will move to the directory: /OneMS/ftproot/pldt 
